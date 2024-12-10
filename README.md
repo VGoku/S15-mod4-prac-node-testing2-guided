@@ -12,3 +12,10 @@ Guided project for **Node Server Testing** Module.
 - [ ] type `npm run server` to start the API.
 
 Please follow along as the instructor adds automated tests to the API.
+
+MyNotes:
+npm i
+npm run resetDb
+npm i -D jest supertest cross-env
+"test": "cross-env NODE_ENV=testing jest --verbose --watchAll --runInBand"
+npm run server
