@@ -49,6 +49,8 @@ describe("insert", () => {
         expect(result).toMatchObject(bilbo)
     })
     test("[5]adds the hobbit to the hobbits table", async () => {
-
+        await Hobbit.insert(bilbo)
+        const records = await db("hobbits")
+        expect(records).toHaveLength(5)
     })
 })
