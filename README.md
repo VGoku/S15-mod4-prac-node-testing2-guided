@@ -20,3 +20,4 @@ npm i -D jest supertest cross-env
 "test": "cross-env NODE_ENV=testing jest --verbose --watchAll --runInBand"
 npm run server
 npm i -D @types/jest
+supertest = server.test.js
